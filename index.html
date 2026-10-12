@@ -48,4 +48,4 @@ Reply ONLY with JSON {"instagram":"","tiktok":"","facebook":"","alt":""}. Descri
  const content=imgData?[{type:'text',text:rules},{type:'image_url',image_url:{url:imgData}}]:rules;
  try{const r=await fetch(($('base').value||'https://api.openai.com/v1').replace(/\/$/,'')+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+k},body:JSON.stringify({model:$('model').value||'gpt-4o-mini',messages:[{role:'user',content}]})});
  const j=await r.json(),t=j.choices[0].message.content,o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1)),res={};for(const p in P)res[p]={text:o[p]};render(res,i);if(o.alt)$('alt').textContent=o.alt;save(res,i)}catch(e){alert('AI error: '+e.message)}$('ai').textContent='Generate with AI'};
-showH();</script></body></html>
+showH();if(location.search.includes('demo')){$('desc').value='A woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea.';$('mood').value='poetic';gen()}</script></body></html>
