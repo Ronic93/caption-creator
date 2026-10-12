@@ -1,51 +1,108 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ArtByRonic Captions</title>
-<style>:root{--bg:#0f0d12;--card:#1a1720;--gold:#d6a84f;--line:#2e2936;--rust:#c2582f;--txt:#eee8f2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,sans-serif;padding:14px;max-width:760px;margin:auto}
-h1{color:var(--gold);font-size:22px;margin:6px 0 2px}.sub{opacity:.6;font-size:13px;margin-bottom:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+<style>:root{--bg:#0f0d12;--card:#1a1720;--gold:#d6a84f;--line:#2e2936;--rust:#c2582f;--txt:#eee8f2}*{box-sizing:border-box}body{margin:0 auto;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,sans-serif;padding:14px;max-width:760px}
+h1{color:var(--gold);font-size:22px;margin:6px 0 2px}h2{color:var(--gold);font-size:16px;margin:0 0 6px}.sub{opacity:.6;font-size:13px;margin-bottom:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
 label{display:block;font-size:12px;color:var(--gold);margin:10px 0 4px;text-transform:uppercase;letter-spacing:.05em}textarea,input,select{width:100%;background:#110f15;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:15px}textarea{min-height:90px}
-.row{display:flex;gap:8px}.row>*{flex:1}button{background:var(--gold);color:#16131b;border:0;border-radius:10px;padding:11px 14px;font-weight:700;font-size:15px;cursor:pointer}button.alt{background:#2a2531;color:var(--txt)}
-#prev{max-width:100%;max-height:220px;border-radius:10px;margin-top:8px;display:none}.plat h3{margin:0;color:var(--gold);font-size:16px;display:flex;justify-content:space-between}pre{white-space:pre-wrap;font-family:inherit;background:#0b0a0e;border-radius:10px;padding:10px;font-size:14px;margin:8px 0}
-.meta{font-size:12px;opacity:.75}.ok{color:#7fd18b}.bad{color:var(--rust)}.badge{padding:2px 8px;border-radius:20px;background:#2a2531;font-size:13px}details{font-size:13px}.hist{font-size:13px;border-top:1px solid var(--line);padding:8px 0;cursor:pointer}</style></head><body>
-<h1>✦ ArtByRonic Captions</h1><div class="sub">Captions for Instagram, TikTok and Facebook, built on 2026 best practices, with a quality score for each one.</div>
-<div class="card"><label>Description of the piece</label><textarea id="desc" placeholder="A woman in a liquid-gold gown walks on water under a giant moon…"></textarea>
-<label>Image (optional)</label><input type="file" id="img" accept="image/*"><img id="prev">
+.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1;min-width:0}button{background:var(--gold);color:#16131b;border:0;border-radius:10px;padding:11px 12px;font-weight:700;font-size:14px;cursor:pointer}button.alt{background:#2a2531;color:var(--txt)}button.on{outline:2px solid var(--gold)}
+#prev{max-width:100%;max-height:220px;border-radius:10px;margin-top:8px;display:none}.plat h3{margin:0;color:var(--gold);font-size:16px;display:flex;justify-content:space-between;gap:6px;align-items:center}pre{white-space:pre-wrap;font-family:inherit;background:#0b0a0e;border-radius:10px;padding:10px;font-size:14px;margin:8px 0}
+.meta{font-size:12px;opacity:.8}.ok{color:#7fd18b}.bad{color:var(--rust)}.badge{padding:2px 8px;border-radius:20px;background:#2a2531;font-size:12px;white-space:nowrap}.aa{background:#1f4d2a;color:#9be3a8}.rv{background:#4a3417;color:#f0c27a}
+details summary{cursor:pointer;color:var(--gold);font-weight:700}.hist{font-size:13px;border-top:1px solid var(--line);padding:8px 0;cursor:pointer}ul{margin:4px 0;padding-left:18px;font-size:13px}#status{font-size:13px;margin-top:6px}</style></head><body>
+<h1>✦ ArtByRonic Captions</h1><div class="sub">Captions for Instagram, TikTok and Facebook, built on 2026 best practices and your own results, with a score for each one.</div>
+<div class="card"><label>Description of the piece / story</label><textarea id="desc" placeholder="A woman in a liquid-gold gown walks on water under a giant moon…"></textarea>
+<label>Image (optional, the AI can see it)</label><input type="file" id="img" accept="image/*"><img id="prev">
 <div class="row"><div><label>Mood</label><select id="mood"><option>mysterious</option><option>poetic</option><option>bold</option><option>playful</option></select></div>
 <div><label>Type</label><select id="type"><option>image</option><option>reel</option><option>carousel</option></select></div></div>
 <div class="row"><div><label>Series</label><input id="series" placeholder="The Greenhouse"></div><div><label>Episode</label><input id="ep" type="number" min="1"></div></div>
 <div class="row"><div><label>CTA</label><select id="cta"><option value="comment">Comment / question</option><option value="follow">Follow</option><option value="save">Save</option><option value="share">Share</option><option value="shop">Shop / link in bio</option></select></div>
 <div><label>Language</label><select id="lang"><option value="en">EN</option><option value="nl">NL</option></select></div></div>
 <label>Pass threshold</label><input id="th" type="number" value="85" min="50" max="100">
-<div class="row" style="margin-top:12px"><button id="go">Generate</button><button class="alt" id="shuf">🔀 Shuffle</button></div>
-<details style="margin-top:10px"><summary>🤖 Smarter captions with your own AI key (optional)</summary>
-<label>API base URL (OpenAI-compatible)</label><input id="base" placeholder="https://api.x.ai/v1"><label>Model</label><input id="model" placeholder="grok-4 / gpt-4o"><label>API key (stored on this device only)</label><input id="key" type="password">
-<div class="row" style="margin-top:8px"><button class="alt" id="savekey">Save</button><button class="alt" id="ai">Generate with AI</button></div><div class="meta">The key is stored only in your browser's localStorage and is never uploaded anywhere. AI captions go through the same score.</div></details></div>
-<div id="out"></div><div class="card"><b style="color:var(--gold)">Alt text</b><pre id="alt">–</pre><button class="alt" onclick="cp(document.getElementById('alt').textContent)">Copy</button></div>
-<div class="card"><b style="color:var(--gold)">History</b> <button class="alt" style="padding:4px 10px;font-size:12px;float:right" id="clr">Clear</button><div id="hist"></div></div>
-<script src="gen.js"></script><script>
-const $=id=>document.getElementById(id),P={instagram:'Instagram',tiktok:'TikTok',facebook:'Facebook'};let imgData=null;
-const H=()=>JSON.parse(localStorage.abrHist||'[]');
-$('img').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{imgData=r.result;$('prev').src=imgData;$('prev').style.display='block'};r.readAsDataURL(f)};
-function inp(){return{description:$('desc').value||'A surreal fashion editorial piece.',mood:$('mood').value,type:$('type').value,series:$('series').value.trim(),episode:$('ep').value,cta:$('cta').value,lang:$('lang').value}}
-function cp(t){navigator.clipboard.writeText(t)}
-function render(res,i){const prev=H().flatMap(h=>Object.values(h.c));$('out').innerHTML=Object.keys(P).map(p=>{const g=res[p],sc=ABR.score(g.text,p,prev),r=ABR.R[p],pass=sc.score>=+$('th').value;
- return `<div class="card plat"><h3>${P[p]} <span class="badge ${pass?'ok':'bad'}">${sc.score}/100 ${pass?'✓':'✗'}</span></h3><pre id="c_${p}"></pre>
- <div class="meta">${sc.len} / ${r.limit.toLocaleString()} characters · sweet spot ${r.sweet[0]}–${r.sweet[1]} · ${sc.tags} hashtags (max ${r.maxTags})${g.tries?' · '+g.tries+' tries':''}</div>
- <div class="meta ${pass?'ok':'bad'}">${sc.why.join(' · ')}</div><div class="row" style="margin-top:8px"><button onclick="cp(document.getElementById('c_${p}').textContent)">Copy</button><button class="alt" onclick="one('${p}')">🔀</button></div></div>`}).join('');
- for(const p in P)$('c_'+p).textContent=res[p].text;$('alt').textContent=ABR.alt(i);window.cur=res}
-function save(res,i){const h=H();h.unshift({t:Date.now(),d:i.description.slice(0,60),c:Object.fromEntries(Object.keys(P).map(p=>[p,res[p].text]))});localStorage.abrHist=JSON.stringify(h.slice(0,50));showH()}
-function gen(){const i=inp(),prev=H().flatMap(h=>Object.values(h.c)),res={};for(const p in P)res[p]=ABR.best(i,p,prev,+$('th').value);render(res,i);save(res,i)}
-function one(p){const i=inp();window.cur[p]=ABR.best(i,p,H().flatMap(h=>Object.values(h.c)),+$('th').value);render(window.cur,i)}
+<div class="row" style="margin-top:12px"><button id="go">✨ Generate</button><button class="alt" id="shuf">🔀 Shuffle</button></div>
+<div id="mode" class="meta" style="margin-top:6px"></div><div id="status"></div></div>
+<div id="out"></div>
+<div class="card"><h2>Alt text</h2><pre id="alt">–</pre><button class="alt" onclick="cp($('alt').textContent)">Copy</button></div>
+<div class="card"><details id="setd"><summary>🤖 AI settings (your own key)</summary>
+<div class="row" style="margin-top:8px"><button class="alt" id="px">xAI (Grok)</button><button class="alt" id="po">OpenAI</button><button class="alt" id="pc">Custom</button></div>
+<label>API base URL</label><input id="base"><label>Model (must accept images)</label><input id="model"><label>API style</label><select id="api"><option value="responses">Responses API (/responses)</option><option value="chat">Chat Completions (/chat/completions)</option></select>
+<label>API key</label><input id="key" type="password" autocomplete="off"><label><input type="checkbox" id="useai" style="width:auto"> Use AI automatically on Generate</label>
+<div class="row" style="margin-top:8px"><button id="savekey">Save</button><button class="alt" id="testkey">Test key</button><button class="alt" id="delkey">Delete key</button></div>
+<div class="meta" style="margin-top:6px">The key is stored only in this browser (localStorage) and is sent only to the API you choose. It is never in the code or on GitHub. Get an xAI key at console.x.ai → API Keys, or an OpenAI key at platform.openai.com/api-keys.</div></details></div>
+<div class="card"><h2>📈 What works for you</h2><div id="ins" class="meta"></div>
+<details style="margin-top:8px"><summary>Import insights (CSV or paste)</summary><label>Platform (if not in the file)</label><select id="iplat"><option>instagram</option><option>tiktok</option><option>facebook</option></select>
+<label>CSV file</label><input type="file" id="icsv" accept=".csv,.txt,.tsv"><label>Or paste CSV/table</label><textarea id="ipaste" placeholder="caption,views,likes,comments,shares,saves"></textarea><button id="iimp" style="margin-top:6px">Import</button></details>
+<details style="margin-top:8px"><summary>Add one post by hand</summary><label>Platform</label><select id="mplat"><option>instagram</option><option>tiktok</option><option>facebook</option></select><label>Caption</label><textarea id="mcap"></textarea>
+<div class="row"><div><label>Views</label><input id="mv" type="number"></div><div><label>Likes</label><input id="ml" type="number"></div><div><label>Comments</label><input id="mc" type="number"></div></div>
+<div class="row"><div><label>Shares</label><input id="ms" type="number"></div><div><label>Saves</label><input id="msv" type="number"></div></div><button id="madd" style="margin-top:8px">Add</button></details>
+<div class="row" style="margin-top:8px"><button class="alt" id="iexp">Export data</button><button class="alt" id="iclr">Clear insights</button></div></div>
+<div class="card"><h2>History</h2><button class="alt" style="padding:4px 10px;font-size:12px" id="clr">Clear</button><div id="hist"></div></div>
+<script src="gen.js"></script><script src="insights.js"></script><script>
+const $=id=>document.getElementById(id),P={instagram:'Instagram',tiktok:'TikTok',facebook:'Facebook'},LS=localStorage;let imgData=null,lastAI=false;
+const PRE={xai:{base:'https://api.x.ai/v1',model:'grok-4.7',api:'responses'},openai:{base:'https://api.openai.com/v1',model:'gpt-4.1-mini',api:'responses'}};
+const H=()=>JSON.parse(LS.abrHist||'[]'),POSTS=()=>JSON.parse(LS.abrPosts||'[]'),A=()=>INS.analyze(POSTS()),prevT=()=>H().flatMap(h=>Object.values(h.c));
+function cp(t){navigator.clipboard.writeText(t).then(()=>st('Copied ✓'))}function st(t,c){$('status').innerHTML=`<span class="${c||''}">${t}</span>`}
+$('img').onchange=e=>{const f=e.target.files[0];if(!f)return;const im=new Image();im.onload=()=>{const c=document.createElement('canvas'),k=Math.min(1,1280/Math.max(im.width,im.height));c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);imgData=c.toDataURL('image/jpeg',.85);$('prev').src=imgData;$('prev').style.display='block'};im.src=URL.createObjectURL(f)};
+function inp(){return{description:$('desc').value.trim()||'A surreal fashion editorial piece.',mood:$('mood').value,type:$('type').value,series:$('series').value.trim(),episode:$('ep').value,cta:$('cta').value,lang:$('lang').value}}
+function cfg(){return{base:(LS.abrBase||'').replace(/\/$/,''),model:LS.abrModel||'',api:LS.abrApi||'responses',key:LS.abrKey||''}}
+function aiOn(){const c=cfg();return !!(c.key&&c.base&&c.model&&LS.abrUseAI==='1')}
+function mode(){const n=POSTS().length;$('mode').innerHTML=`Mode: <b>${aiOn()?'AI ('+cfg().model+')':'Templates (no AI)'}</b> · insights: ${n} posts${n<20?` (auto-approve needs ≥20)`:''}`}
+function approve(pass,ai){return ai&&pass&&POSTS().length>=20}
+function render(res,i,ai){const prev=prevT(),a=A();$('out').innerHTML=Object.keys(P).map(p=>{const g=res[p],sc=ABR.score(g.text,p,prev.filter(t=>t!==g.text),a),r=ABR.R[p],th=+$('th').value,pass=sc.score>=th,ok=approve(pass,ai);
+ return `<div class="card plat"><h3>${P[p]} <span><span class="badge ${pass?'ok':'bad'}">${sc.score}/100</span> <span class="badge ${ok?'aa':'rv'}">${ok?'✓ Auto-approve':'👁 Review'}</span></span></h3><pre id="c_${p}"></pre>
+ <div class="meta">${sc.len} / ${r.limit.toLocaleString()} characters · sweet spot ${r.sweet[0]}–${r.sweet[1]} · ${sc.tags} hashtags (max ${r.maxTags})${g.tries?' · '+g.tries+' tries':''} · ${ai?'AI':'templates'}</div>
+ <div class="meta ${pass?'ok':'bad'}">${sc.why.join(' · ')}</div>${ok?'':`<div class="meta">Review because: ${[!ai&&'no AI used',!pass&&'score below '+th,POSTS().length<20&&'fewer than 20 posts in insights'].filter(Boolean).join(', ')}</div>`}
+ <div class="row" style="margin-top:8px"><button onclick="cp($('c_${p}').textContent)">Copy</button><button class="alt" onclick="one('${p}')">🔀</button></div></div>`}).join('');
+ for(const p in P)$('c_'+p).textContent=res[p].text;window.cur=res;window.curAI=ai}
+function save(res,i){const h=H();h.unshift({t:Date.now(),d:i.description.slice(0,60),c:Object.fromEntries(Object.keys(P).map(p=>[p,res[p].text]))});LS.abrHist=JSON.stringify(h.slice(0,50));showH()}
+function tmpl(){const i=inp(),a=A(),res={};for(const p in P)res[p]=ABR.best(i,p,prevT(),+$('th').value,25,a);return res}
+async function gen(){const i=inp();$('alt').textContent=ABR.alt(i);
+ if(aiOn()){try{st('AI is writing…');const res=await aiGen(i);render(res,i,true);save(res,i);st('AI captions ready ✓','ok');return}catch(e){st('AI failed ('+e.message+'). Using templates instead.','bad')}}
+ const res=tmpl();render(res,i,false);save(res,i)}
+function one(p){const i=inp();if(window.curAI&&aiOn()){gen();return}window.cur[p]=ABR.best(i,p,prevT(),+$('th').value,25,A());render(window.cur,i,false)}
+// ---------- AI ----------
+function rulesText(){return `PLATFORM RULES (2026):
+- instagram: first line = hook, max 125 chars (shown before "more"); then line breaks; one plain searchable keyword phrase (e.g. "AI short film · surreal fashion editorial"); exactly one CTA; 3-5 hashtags at the end (max 5, Instagram cap); total 90-600 chars.
+- tiktok: one paragraph 50-300 chars, first sentence = hook under 90 chars, searchable keywords early, one CTA, 3-5 descriptive hashtags. Never #fyp/#foryou/#viral.
+- facebook: conversational, hook first line under 125 chars, end with a genuine question, 0-2 hashtags, total 40-320 chars.
+- ALWAYS include #artbyronic. No banned/spammy tags: ${ABR.BANNED.join(', ')}.
+- Hooks must be specific to THIS piece/story (characters, objects, conflict, series cliffhanger), not generic.`}
+function prompt(i,fb){const a=A(),top=(a.top||[]).slice(0,5),sum=INS.summary(a),recent=H().slice(0,5).flatMap(h=>Object.values(h.c).map(t=>t.split('\n')[0]));
+ return `You write captions for ArtByRonic: surreal fashion-editorial AI art and Seedance AI short films (cinematic, mysterious, luxury, gold tones).
+Write ${i.lang==='nl'?'in Dutch (Nederlands)':'in English'}. Mood: ${i.mood}. Content type: ${i.type}. ${i.series?`Series: "${i.series}"${i.episode?' episode '+i.episode:''}. Tie the hook to the story arc and tease the next episode.`:''} Preferred CTA: ${i.cta}.
+Piece description: ${i.description}
+${imgData?'An image of the piece is attached: describe concrete visual details from it in the hook/body and in the alt text.':''}
+${rulesText()}
+${sum.length?'WHAT WORKS FOR THIS CREATOR (from his insights):\n- '+sum.join('\n- '):''}
+${top.length?'HIS TOP PERFORMING PAST CAPTIONS (match their voice, do not copy):\n'+top.map((p,k)=>`${k+1}. [${p.platform}] ${p.caption.slice(0,400)}`).join('\n'):''}
+${recent.length?'Do NOT reuse these recent hooks: '+recent.slice(0,12).join(' | '):''}
+${fb?'PREVIOUS ATTEMPT FAILED THESE CHECKS, FIX THEM: '+fb:''}
+Reply with ONLY JSON: {"instagram":"...","tiktok":"...","facebook":"...","alt":"alt text max 250 chars"}`}
+async function call(text,img){const c=cfg();let url,body;
+ if(c.api==='responses'){const content=[{type:'input_text',text}];if(img)content.unshift({type:'input_image',image_url:img,detail:'high'});url=c.base+'/responses';body={model:c.model,input:[{role:'user',content}]}}
+ else{const content=[{type:'text',text}];if(img)content.push({type:'image_url',image_url:{url:img}});url=c.base+'/chat/completions';body={model:c.model,messages:[{role:'user',content}]}}
+ const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+c.key},body:JSON.stringify(body)});const j=await r.json().catch(()=>({}));
+ if(!r.ok)throw new Error((j.error&&(j.error.message||j.error))||('HTTP '+r.status));
+ if(c.api==='chat')return j.choices[0].message.content;if(j.output_text)return j.output_text;
+ return (j.output||[]).flatMap(o=>o.content||[]).filter(x=>x.type==='output_text'||x.text).map(x=>x.text).join('')}
+async function aiGen(i){const th=+$('th').value,a=A(),best={};let fb='';
+ for(let k=1;k<=3;k++){st(`AI is writing… (attempt ${k}/3)`);const t=await call(prompt(i,fb),imgData),o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1));if(o.alt)$('alt').textContent=o.alt;
+  const fails=[];for(const p in P){if(!o[p])continue;const sc=ABR.score(o[p],p,prevT(),a);if(!best[p]||sc.score>best[p].s)best[p]={text:o[p],s:sc.score,tries:k};if(sc.score<th)fails.push(p+': '+sc.why.join('; '))}
+  if(Object.keys(P).every(p=>best[p]&&best[p].s>=th))break;fb=fails.join(' | ')}
+ for(const p in P)if(!best[p])best[p]=ABR.best(i,p,prevT(),th,25,a);return best}
+function fill(p){$('base').value=p.base;$('model').value=p.model;$('api').value=p.api}
+$('px').onclick=()=>fill(PRE.xai);$('po').onclick=()=>fill(PRE.openai);$('pc').onclick=()=>fill({base:'',model:'',api:'chat'});
+$('savekey').onclick=()=>{LS.abrBase=$('base').value.trim();LS.abrModel=$('model').value.trim();LS.abrApi=$('api').value;LS.abrKey=$('key').value.trim();LS.abrUseAI=$('useai').checked?'1':'0';mode();st('Settings saved on this device ✓','ok')};
+$('delkey').onclick=()=>{delete LS.abrKey;$('key').value='';mode();st('Key deleted')};
+$('testkey').onclick=async()=>{$('savekey').onclick();st('Testing key…');try{const t=await call('Reply with exactly: OK');st('✓ Key works ('+cfg().model+'): '+t.slice(0,40),'ok')}catch(e){st('✗ Key test failed: '+e.message,'bad')}};
+// ---------- insights ----------
+function savePosts(n){const all=POSTS(),seen=new Set(all.map(p=>p.platform+p.caption.slice(0,80)));for(const p of n)if(!seen.has(p.platform+p.caption.slice(0,80)))all.push(p);LS.abrPosts=JSON.stringify(all);showIns();mode();st(`${n.length} posts imported ✓ (${all.length} total)`,'ok')}
+$('iimp').onclick=async()=>{const f=$('icsv').files[0];const t=f?await f.text():$('ipaste').value;const n=INS.importCSV(t,$('iplat').value);if(!n.length)return st('No posts found. Check that the file has a caption/description column.','bad');savePosts(n)};
+$('madd').onclick=()=>{if(!$('mcap').value.trim())return;savePosts([{platform:$('mplat').value,caption:$('mcap').value,views:+$('mv').value||0,likes:+$('ml').value||0,comments:+$('mc').value||0,shares:+$('ms').value||0,saves:+$('msv').value||0}]);['mcap','mv','ml','mc','ms','msv'].forEach(x=>$(x).value='')};
+$('iclr').onclick=()=>{if(confirm('Delete all insights?')){LS.abrPosts='[]';showIns();mode()}};
+$('iexp').onclick=()=>{const b=new Blob([JSON.stringify({posts:POSTS(),history:H()},null,1)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='artbyronic-captions-data.json';a.click()};
+function showIns(){const a=A(),s=INS.summary(a);$('ins').innerHTML=!a.n?'No insights yet. Import your post stats below and the generator will learn from them.':`${a.n} posts · avg engagement score ${(a.avg*100).toFixed(1)}%${s.length?'<ul>'+s.map(x=>'<li>'+x.replace(/</g,'&lt;')+'</li>').join('')+'</ul>':'<br>Need at least 3 posts per pattern before drawing conclusions.'}${a.top&&a.top[0]?`<div>Top post: “${a.top[0].caption.slice(0,90).replace(/</g,'&lt;')}…”</div>`:''}`}
 function showH(){$('hist').innerHTML=H().map((h,k)=>`<div class="hist" onclick="load(${k})">${new Date(h.t).toLocaleString()} – ${h.d.replace(/</g,'&lt;')}</div>`).join('')||'<div class="meta">No history yet</div>'}
-function load(k){const h=H()[k],res={};for(const p in P)res[p]={text:h.c[p]};render(res,inp())}
-$('go').onclick=gen;$('shuf').onclick=gen;$('clr').onclick=()=>{localStorage.abrHist='[]';showH()};
-$('base').value=localStorage.abrBase||'';$('model').value=localStorage.abrModel||'';$('key').value=localStorage.abrKey||'';
-$('savekey').onclick=()=>{localStorage.abrBase=$('base').value;localStorage.abrModel=$('model').value;localStorage.abrKey=$('key').value;alert('Saved on this device')};
-$('ai').onclick=async()=>{const i=inp(),k=$('key').value;if(!k)return alert('Enter your API key first');$('ai').textContent='Working…';
- const rules=`Write captions for the brand ArtByRonic (surreal fashion-editorial AI art, Seedance reels). Language: ${i.lang}. Mood: ${i.mood}. Type: ${i.type}. Series: ${i.series} ${i.episode}. CTA: ${i.cta}.
-Instagram: hook under 125 chars on the first line, line breaks, keyword phrase, CTA, exactly 5 hashtags at the end incl #artbyronic, max 600 chars.
-TikTok: one paragraph 80-300 chars, hook first, searchable keywords, 4 hashtags incl #artbyronic, no #fyp.
-Facebook: conversational, hook first, end with a question, 0-2 hashtags incl #artbyronic, max 320 chars.
-Reply ONLY with JSON {"instagram":"","tiktok":"","facebook":"","alt":""}. Description: ${i.description}`;
- const content=imgData?[{type:'text',text:rules},{type:'image_url',image_url:{url:imgData}}]:rules;
- try{const r=await fetch(($('base').value||'https://api.openai.com/v1').replace(/\/$/,'')+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+k},body:JSON.stringify({model:$('model').value||'gpt-4o-mini',messages:[{role:'user',content}]})});
- const j=await r.json(),t=j.choices[0].message.content,o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1)),res={};for(const p in P)res[p]={text:o[p]};render(res,i);if(o.alt)$('alt').textContent=o.alt;save(res,i)}catch(e){alert('AI error: '+e.message)}$('ai').textContent='Generate with AI'};
-showH();if(location.search.includes('demo')){$('desc').value='A woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea.';$('mood').value='poetic';gen()}</script></body></html>
+function load(k){const h=H()[k],res={};for(const p in P)res[p]={text:h.c[p]};render(res,inp(),false)}
+$('go').onclick=gen;$('shuf').onclick=gen;$('clr').onclick=()=>{LS.abrHist='[]';showH()};
+const c=cfg();$('base').value=c.base||PRE.xai.base;$('model').value=c.model||PRE.xai.model;$('api').value=c.api;$('key').value=c.key;$('useai').checked=LS.abrUseAI==='1';
+showH();showIns();mode();
+if(location.search.includes('demo')){$('desc').value='A woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea.';$('mood').value='poetic';
+ if(!POSTS().length){const s=[];for(let k=0;k<24;k++){const q=k%3==0;s.push({platform:['instagram','tiktok','facebook'][k%3],caption:(q?'What would you name her? 🌙':'Silence, poured in gold.')+'\nAI art · surreal fashion editorial. #artbyronic #aiart #surrealfashion',views:1000+k*50,likes:q?150:60,comments:q?30:5,shares:5,saves:q?20:5})}savePosts(s)}gen();$('setd').open=true}
+</script></body></html>

@@ -7,7 +7,7 @@
  "firstTry": {
   "instagram": 18,
   "tiktok": 20,
-  "facebook": 14
+  "facebook": 17
  },
  "n": 20,
  "out": [
@@ -23,7 +23,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Soft as memory, sharp as glass. 🌙\n\nA woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea like molten gold.\n\nAI art · surreal fashion editorial.\n\nTell me in one word: what do you feel?\n\n#artbyronic #surrealart #fashioneditorial #moonlit #surrealism",
+     "text": "Where the light learns to walk. ✨\n\nA woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea like molten gold.\n\nAI art · surreal fashion editorial.\n\nWhich detail caught you first?\n\n#artbyronic #aiart #surrealfashion #surrealism #fashioneditorial",
      "score": 100,
      "why": [
       "All checks passed"
@@ -31,7 +31,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Where the light learns to walk. A woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea like molten… AI art · surreal fashion editorial. Which detail caught you first? #artbyronic #aiart #moonlit #surrealism",
+     "text": "A slow bloom under a borrowed moon. A woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea like molten… AI art · surreal fashion editorial. Tell me in one word: what do you feel? #artbyronic #digitalart #moonlit #surrealism",
      "score": 100,
      "why": [
       "All checks passed"
@@ -39,7 +39,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Where the light learns to walk. 🤍\n\nA woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea like molten gold.\n\nWhat story do you see here?\n\n#artbyronic #digitalart",
+     "text": "A slow bloom under a borrowed moon. ✨\n\nA woman in a liquid-gold gown walks on still water under a giant full moon. Her dress melts into the sea like molten gold.\n\nWould you hang this on your wall?\n\n#artbyronic #digitalart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -60,7 +60,7 @@
    },
    "r": {
     "instagram": {
-     "text": "She was never supposed to be seen. 🌙\n\nTwo twin sisters in a Victorian greenhouse. One cuts the last rose; the other watches through fogged glass. \"It was mine.\"\n\nThe Greenhouse · Part 1\nAI short film · surreal digital art.\n\nFollow so you don't miss part 2.\n\n#artbyronic #aiart #thegreenhouse #darkfantasy #aifilm",
+     "text": "You were not meant to find this. 🖤\n\nTwo twin sisters in a Victorian greenhouse. One cuts the last rose; the other watches through fogged glass. \"It was mine.\"\n\nThe Greenhouse · Part 1\nAI short film · surreal digital art.\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #aiart #thegreenhouse #darkfantasy #aifilm",
      "score": 100,
      "why": [
       "All checks passed"
@@ -68,15 +68,15 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "What is she waiting for? The Greenhouse · Part 1. Two twin sisters in a Victorian greenhouse. One cuts the last rose; the other watches through fogged glass. \"It was… AI short film · surreal digital art. Follow so you don't miss part 2. #artbyronic #aivideo #thegreenhouse #aifilm",
-     "score": 100,
+     "text": "Look closer. Something is wrong here. The Greenhouse · Part 1. Two twin sisters in a Victorian greenhouse. One cuts the last rose; the other watches through fogged glass. \"It was… AI short film · surreal digital art. Follow @artbyronic for the next chapter. #artbyronic #aivideo #thegreenhouse #darkfantasy",
+     "score": 90,
      "why": [
-      "All checks passed"
+      "Long (306>300)"
      ],
      "tries": 1
     },
     "facebook": {
-     "text": "You were not meant to find this. ✨\n\nTwo twin sisters in a Victorian greenhouse. One cuts the last rose; the other watches through fogged glass. \"It was mine.\" (The Greenhouse · Part 1)\n\nFollow for more surreal editorials.\n\n#artbyronic #aivideo",
+     "text": "Look closer. Something is wrong here. 🕯️\n\nTwo twin sisters in a Victorian greenhouse. One cuts the last rose; the other watches through fogged glass. \"It was mine.\" (The Greenhouse · Part 1)\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -97,7 +97,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Some doors only open at midnight. ✨\n\nThe twin returns to the greenhouse at night, holding the rose. The glass cracks.\n\nThe Greenhouse · Part 2\nAI short film · surreal digital art.\n\nFollow for more surreal editorials.\n\n#artbyronic #aiart #thegreenhouse #darkfantasy #aifilm",
+     "text": "She was never supposed to be seen. 🕯️\n\nThe twin returns to the greenhouse at night, holding the rose. The glass cracks.\n\nThe Greenhouse · Part 2\nAI short film · surreal digital art.\n\nFollow so you don't miss part 3.\n\n#artbyronic #aivideo #thegreenhouse #aifilm #darkfantasy",
      "score": 100,
      "why": [
       "All checks passed"
@@ -105,7 +105,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Some doors only open at midnight. The Greenhouse · Part 2. The twin returns to the greenhouse at night, holding the rose. The glass cracks. AI short film · surreal digital art. Follow for more surreal editorials. #artbyronic #aivideo #thegreenhouse #darkfantasy",
+     "text": "You were not meant to find this. The Greenhouse · Part 2. The twin returns to the greenhouse at night, holding the rose. The glass cracks. AI short film · surreal digital art. Follow @artbyronic for the next chapter. #artbyronic #aiart #thegreenhouse #darkfantasy",
      "score": 100,
      "why": [
       "All checks passed"
@@ -113,7 +113,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "What is she waiting for? ✨\n\nThe twin returns to the greenhouse at night, holding the rose. The glass cracks. (The Greenhouse · Part 2)\n\nFollow for more surreal editorials.\n\n#artbyronic #aiart",
+     "text": "She was never supposed to be seen. 🖤\n\nThe twin returns to the greenhouse at night, holding the rose. The glass cracks. (The Greenhouse · Part 2)\n\nFollow for more surreal editorials.\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -134,7 +134,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Rules? Never heard of them. ⚡\n\nA model in a chrome trench coat floats above a desert of mirrors.\n\nAI art · surreal digital art.\n\nSave this for your moodboard.\n\n#artbyronic #aiart #aifilm #seedance #dreamcore",
+     "text": "Zero cameras. Full editorial. ⚡\n\nA model in a chrome trench coat floats above a desert of mirrors.\n\nAI art · surreal digital art.\n\nSave it for later, it hits different at night.\n\n#artbyronic #surrealart #surrealfashion #fashioneditorial #dreamcore",
      "score": 100,
      "why": [
       "All checks passed"
@@ -142,20 +142,20 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Rules? Never heard of them. A model in a chrome trench coat floats above a desert of mirrors. AI art · surreal digital art. Save it for later, it hits different at night. #artbyronic #surrealart #aicinema #surrealfashion",
-     "score": 90,
-     "why": [
-      "Hook too short"
-     ],
-     "tries": 1
-    },
-    "facebook": {
-     "text": "Built in my head. Rendered in gold. 🔥\n\nA model in a chrome trench coat floats above a desert of mirrors.\n\nSave this for your moodboard.\n\n#artbyronic #aiart",
+     "text": "Couture for a world that doesn't exist yet. A model in a chrome trench coat floats above a desert of mirrors. AI art · surreal digital art. Save this for your moodboard. #artbyronic #aiart #darkfantasy #editorialart",
      "score": 100,
      "why": [
       "All checks passed"
      ],
      "tries": 1
+    },
+    "facebook": {
+     "text": "Couture for a world that doesn't exist yet. ⚡\n\nA model in a chrome trench coat floats above a desert of mirrors.\n\nSave it for later, it hits different at night.\n\n#artbyronic #digitalart",
+     "score": 100,
+     "why": [
+      "All checks passed"
+     ],
+     "tries": 2
     }
    }
   },
@@ -171,7 +171,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Me, pretending this is a normal Tuesday. ✨\n\nPink cloud dress, giant teacup, model sipping from the sky.\n\nAI art · surreal fashion editorial.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #digitalart #fashioneditorial #surrealfashion #conceptart",
+     "text": "When the dress code says \"surreal\". 💫\n\nPink cloud dress, giant teacup, model sipping from the sky.\n\nAI art · surreal fashion editorial.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #aiart #fashioneditorial #surrealfashion #aifilm",
      "score": 100,
      "why": [
       "All checks passed"
@@ -179,7 +179,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "POV: your outfit has its own weather. Pink cloud dress, giant teacup, model sipping from the sky. AI art · surreal fashion editorial. Share with the friend who would wear this. #artbyronic #surrealart #fashioneditorial #surrealfashion",
+     "text": "Tell me this isn't your new wallpaper. Pink cloud dress, giant teacup, model sipping from the sky. AI art · surreal fashion editorial. Share with the friend who would wear this. #artbyronic #aiart #surrealfashion #fashioneditorial",
      "score": 100,
      "why": [
       "All checks passed"
@@ -187,7 +187,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Tell me this isn't your new wallpaper. ✨\n\nPink cloud dress, giant teacup, model sipping from the sky.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #surrealart",
+     "text": "Gravity called. She let it go to voicemail. ✨\n\nPink cloud dress, giant teacup, model sipping from the sky.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -208,7 +208,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Look closer. Something is wrong here. 🌙\n\nBlack lace gown made of crows taking flight.\n\nAI art · surreal fashion editorial.\n\nWhich detail caught you first?\n\n#artbyronic #aiart #surrealfashion #fashioneditorial #conceptart",
+     "text": "The quiet before she disappears. 🖤\n\nBlack lace gown made of crows taking flight.\n\nAI art · surreal fashion editorial.\n\nWhat should happen next?\n\n#artbyronic #digitalart #surrealfashion #fashioneditorial #aiartcommunity",
      "score": 100,
      "why": [
       "All checks passed"
@@ -216,7 +216,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "She was never supposed to be seen. Black lace gown made of crows taking flight. AI art · surreal fashion editorial. Which detail caught you first? #artbyronic #digitalart #fashioneditorial #surrealfashion",
+     "text": "She was never supposed to be seen. Black lace gown made of crows taking flight. AI art · surreal fashion editorial. Tell me in one word: what do you feel? #artbyronic #aiart #fashioneditorial #surrealfashion",
      "score": 100,
      "why": [
       "All checks passed"
@@ -224,7 +224,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "The quiet before she disappears. 🕯️\n\nBlack lace gown made of crows taking flight.\n\nWould you hang this on your wall?\n\n#artbyronic #digitalart",
+     "text": "Some doors only open at midnight. 🕯️\n\nBlack lace gown made of crows taking flight.\n\nWhat story do you see here?\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -245,7 +245,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Where the light learns to walk. ✨\n\nGolden mask and silk veil in a flooded cathedral.\n\nAI art · surreal digital art.\n\nWant this on your wall? Link in bio.\n\n#artbyronic #surrealart #goldaesthetic #aicinema #editorialart",
+     "text": "A slow bloom under a borrowed moon. 🌊\n\nGolden mask and silk veil in a flooded cathedral.\n\nAI art · surreal digital art.\n\nPrints & custom pieces: link in bio.\n\n#artbyronic #surrealart #goldaesthetic #seedance #aiartcommunity",
      "score": 100,
      "why": [
       "All checks passed"
@@ -253,7 +253,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "A slow bloom under a borrowed moon. Golden mask and silk veil in a flooded cathedral. AI art · surreal digital art. Want this on your wall? Link in bio. #artbyronic #digitalart #goldaesthetic #fashioneditorial",
+     "text": "Soft as memory, sharp as glass. Golden mask and silk veil in a flooded cathedral. AI art · surreal digital art. Prints & custom pieces: link in bio. #artbyronic #surrealart #goldaesthetic #darkfantasy",
      "score": 100,
      "why": [
       "All checks passed"
@@ -261,12 +261,12 @@
      "tries": 1
     },
     "facebook": {
-     "text": "The sea held its breath for her. ✨\n\nGolden mask and silk veil in a flooded cathedral.\n\nWant this on your wall? Link in bio.\n\n#artbyronic #surrealart",
+     "text": "The sea held its breath for her. 🤍\n\nGolden mask and silk veil in a flooded cathedral.\n\nPrints & custom pieces: link in bio.\n\n#artbyronic #digitalart",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 2
+     "tries": 1
     }
    }
   },
@@ -282,7 +282,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Stop scrolling. Look at the details. 👁️\n\nSeedance reel: a dancer in red silk turns into smoke.\n\nAI short film · surreal digital art.\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #aiart #aivideo #seedance #fashioneditorial",
+     "text": "Couture for a world that doesn't exist yet. ✨\n\nSeedance reel: a dancer in red silk turns into smoke.\n\nAI short film · surreal digital art.\n\nFollow so you don't miss part 2.\n\n#artbyronic #surrealart #seedance #aivideo #fantasyart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -290,7 +290,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Built in my head. Rendered in gold. Seedance reel: a dancer in red silk turns into smoke. AI short film · surreal digital art. Follow for more surreal editorials. #artbyronic #aiart #seedance #aivideo",
+     "text": "Zero cameras. Full editorial. Seedance reel: a dancer in red silk turns into smoke. AI short film · surreal digital art. Follow so you don't miss part 2. #artbyronic #surrealart #seedance #aivideo",
      "score": 100,
      "why": [
       "All checks passed"
@@ -298,7 +298,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Zero cameras. Full editorial. ⚡\n\nSeedance reel: a dancer in red silk turns into smoke.\n\nFollow so you don't miss part 2.\n\n#artbyronic #aiart",
+     "text": "Rules? Never heard of them. ⚡\n\nSeedance reel: a dancer in red silk turns into smoke.\n\nFollow for more surreal editorials.\n\n#artbyronic #aivideo",
      "score": 100,
      "why": [
       "All checks passed"
@@ -319,7 +319,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Gravity called. She let it go to voicemail. 🫧\n\nGold-leaf skin model surrounded by floating oranges.\n\nAI art · surreal digital art.\n\nWhich detail caught you first?\n\n#artbyronic #aiart #goldaesthetic #aifilm #aiartcommunity",
+     "text": "Gravity called. She let it go to voicemail. 💫\n\nGold-leaf skin model surrounded by floating oranges.\n\nAI art · surreal digital art.\n\nTell me in one word: what do you feel?\n\n#artbyronic #aiart #goldaesthetic #aifilm #fantasyart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -327,7 +327,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Tell me this isn't your new wallpaper. Gold-leaf skin model surrounded by floating oranges. AI art · surreal digital art. Which detail caught you first? #artbyronic #aiart #goldaesthetic #fantasyart",
+     "text": "Tell me this isn't your new wallpaper. Gold-leaf skin model surrounded by floating oranges. AI art · surreal digital art. Tell me in one word: what do you feel? #artbyronic #surrealart #goldaesthetic #aifashion",
      "score": 100,
      "why": [
       "All checks passed"
@@ -335,7 +335,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "When the dress code says \"surreal\". 😌\n\nGold-leaf skin model surrounded by floating oranges.\n\nWould you hang this on your wall?\n\n#artbyronic #aiart",
+     "text": "POV: your outfit has its own weather. ✨\n\nGold-leaf skin model surrounded by floating oranges.\n\nWhat would you name this piece?\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -356,15 +356,15 @@
    },
    "r": {
     "instagram": {
-     "text": "Fashion was never meant to obey gravity. 🔥\n\nSurreal fashion editorial: velvet suit, staircase into clouds.\n\nAscend · Part 3\nAI art · surreal fashion editorial.\n\nSave this for your moodboard.\n\n#artbyronic #aiart #ascend #aifashion #fashioneditorial",
+     "text": "Couture for a world that doesn't exist yet. 👁️\n\nSurreal fashion editorial: velvet suit, staircase into clouds.\n\nAscend · Part 3\nAI art · surreal fashion editorial.\n\nSave it for later, it hits different at night.\n\n#artbyronic #aiart #ascend #fashioneditorial #aifashion",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 2
+     "tries": 1
     },
     "tiktok": {
-     "text": "Rules? Never heard of them. Ascend · Part 3. Surreal fashion editorial: velvet suit, staircase into clouds. AI art · surreal fashion editorial. Save it for later, it hits different at night. #artbyronic #aiart #ascend #aifashion",
+     "text": "Rules? Never heard of them. Ascend · Part 3. Surreal fashion editorial: velvet suit, staircase into clouds. AI art · surreal fashion editorial. Save it for later, it hits different at night. #artbyronic #surrealart #ascend #fashioneditorial",
      "score": 90,
      "why": [
       "Hook too short"
@@ -372,7 +372,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Built in my head. Rendered in gold. 👁️\n\nSurreal fashion editorial: velvet suit, staircase into clouds. (Ascend · Part 3)\n\nSave it for later, it hits different at night.\n\n#artbyronic #surrealart",
+     "text": "Fashion was never meant to obey gravity. ✨\n\nSurreal fashion editorial: velvet suit, staircase into clouds. (Ascend · Part 3)\n\nSave this for your moodboard.\n\n#artbyronic #aiart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -393,7 +393,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Some places only exist between breaths. ✨\n\nA bride whose veil is a waterfall.\n\nAI short film · surreal digital art.\n\nShare with the friend who would wear this.\n\n#artbyronic #aivideo #surrealism #aifashion #fantasyart",
+     "text": "Where the light learns to walk. 🌊\n\nA bride whose veil is a waterfall.\n\nAI short film · surreal digital art.\n\nShare with the friend who would wear this.\n\n#artbyronic #surrealart #surrealism #goldaesthetic #seedance",
      "score": 100,
      "why": [
       "All checks passed"
@@ -401,7 +401,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Where the light learns to walk. A bride whose veil is a waterfall. AI short film · surreal digital art. Share with the friend who would wear this. #artbyronic #surrealart #surrealism #fantasyart",
+     "text": "Some places only exist between breaths. A bride whose veil is a waterfall. AI short film · surreal digital art. Share with the friend who would wear this. #artbyronic #surrealart #surrealism #goldaesthetic",
      "score": 100,
      "why": [
       "All checks passed"
@@ -409,7 +409,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Silence, poured in gold. 🌊\n\nA bride whose veil is a waterfall.\n\nShare with the friend who would wear this.\n\n#artbyronic #aiart",
+     "text": "Some places only exist between breaths. 🌙\n\nA bride whose veil is a waterfall.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #aiart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -430,7 +430,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Look closer. Something is wrong here. ✨\n\nTwin portraits, one burning, one frozen.\n\nThe Greenhouse · Part 3\nAI art · surreal digital art.\n\nTell me in one word: what do you feel?\n\n#artbyronic #aiart #thegreenhouse #aifilm #darkfantasy",
+     "text": "She was never supposed to be seen. 🌙\n\nTwin portraits, one burning, one frozen.\n\nThe Greenhouse · Part 3\nAI art · surreal digital art.\n\nWhat should happen next?\n\n#artbyronic #surrealart #thegreenhouse #aifilm #darkfantasy",
      "score": 100,
      "why": [
       "All checks passed"
@@ -438,7 +438,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Nobody remembers who built this place. The Greenhouse · Part 3. Twin portraits, one burning, one frozen. AI art · surreal digital art. Would you step into this world? Yes or no? #artbyronic #digitalart #thegreenhouse #darkfantasy",
+     "text": "What is she waiting for? The Greenhouse · Part 3. Twin portraits, one burning, one frozen. AI art · surreal digital art. Tell me in one word: what do you feel? #artbyronic #digitalart #thegreenhouse #darkfantasy",
      "score": 100,
      "why": [
       "All checks passed"
@@ -446,7 +446,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "She was never supposed to be seen. ✨\n\nTwin portraits, one burning, one frozen. (The Greenhouse · Part 3)\n\nWould you hang this on your wall?\n\n#artbyronic #surrealart",
+     "text": "You were not meant to find this. ✨\n\nTwin portraits, one burning, one frozen. (The Greenhouse · Part 3)\n\nWould you hang this on your wall?\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -467,15 +467,15 @@
    },
    "r": {
     "instagram": {
-     "text": "Zero cameras. Full editorial. 🔥\n\nModel with a moon for a head, haute couture tailoring.\n\nAI art · surreal fashion editorial.\n\nWant this on your wall? Link in bio.\n\n#artbyronic #surrealart #surrealism #moonlit #editorialart",
+     "text": "Fashion was never meant to obey gravity. 🔥\n\nModel with a moon for a head, haute couture tailoring.\n\nAI art · surreal fashion editorial.\n\nPrints & custom pieces: link in bio.\n\n#artbyronic #digitalart #surrealism #moonlit #conceptart",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 2
+     "tries": 1
     },
     "tiktok": {
-     "text": "Zero cameras. Full editorial. Model with a moon for a head, haute couture tailoring. AI art · surreal fashion editorial. Prints & custom pieces: link in bio. #artbyronic #digitalart #moonlit #surrealism",
+     "text": "Zero cameras. Full editorial. Model with a moon for a head, haute couture tailoring. AI art · surreal fashion editorial. Want this on your wall? Link in bio. #artbyronic #surrealart #moonlit #surrealism",
      "score": 100,
      "why": [
       "All checks passed"
@@ -483,12 +483,12 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Fashion was never meant to obey gravity. ⚡\n\nModel with a moon for a head, haute couture tailoring.\n\nWant this on your wall? Link in bio.\n\n#artbyronic #aiart",
+     "text": "Zero cameras. Full editorial. 🔥\n\nModel with a moon for a head, haute couture tailoring.\n\nPrints & custom pieces: link in bio.\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 2
+     "tries": 1
     }
    }
   },
@@ -504,7 +504,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Zacht als herinnering, scherp als glas. 🌊\n\nEen vrouw in een gouden jurk loopt over het water onder de maan.\n\nAI art · surreal digital art.\n\nWelk detail zag jij als eerste?\n\n#artbyronic #digitalart #surrealism #aifashion #aifilm",
+     "text": "Waar het licht leert lopen. ✨\n\nEen vrouw in een gouden jurk loopt over het water onder de maan.\n\nAI art · surreal digital art.\n\nWat moet er nu gebeuren?\n\n#artbyronic #surrealart #surrealism #editorialart #aifashion",
      "score": 100,
      "why": [
       "All checks passed"
@@ -512,7 +512,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Waar het licht leert lopen. Een vrouw in een gouden jurk loopt over het water onder de maan. AI art · surreal digital art. Wat moet er nu gebeuren? #artbyronic #aiart #surrealism #conceptart",
+     "text": "Zacht als herinnering, scherp als glas. Een vrouw in een gouden jurk loopt over het water onder de maan. AI art · surreal digital art. Wat moet er nu gebeuren? #artbyronic #digitalart #surrealism #aiartcommunity",
      "score": 100,
      "why": [
       "All checks passed"
@@ -520,7 +520,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Zacht als herinnering, scherp als glas. 🤍\n\nEen vrouw in een gouden jurk loopt over het water onder de maan.\n\nWelk verhaal zie jij hierin?\n\n#artbyronic #digitalart",
+     "text": "Stilte, gegoten in goud. 🤍\n\nEen vrouw in een gouden jurk loopt over het water onder de maan.\n\nWelk verhaal zie jij hierin?\n\n#artbyronic #digitalart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -541,7 +541,7 @@
    },
    "r": {
     "instagram": {
-     "text": "POV: your outfit has its own weather. 🫧\n\nNeon jellyfish dress drifting through a night city.\n\nAI short film · surreal fashion editorial.\n\nFollow for more surreal editorials.\n\n#artbyronic #aiart #surrealfashion #fashioneditorial #editorialart",
+     "text": "Me, pretending this is a normal Tuesday. 💫\n\nNeon jellyfish dress drifting through a night city.\n\nAI short film · surreal fashion editorial.\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #surrealart #fashioneditorial #surrealfashion #dreamcore",
      "score": 100,
      "why": [
       "All checks passed"
@@ -549,7 +549,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "When the dress code says \"surreal\". Neon jellyfish dress drifting through a night city. AI short film · surreal fashion editorial. Follow for more surreal editorials. #artbyronic #aivideo #fashioneditorial #surrealfashion",
+     "text": "When the dress code says \"surreal\". Neon jellyfish dress drifting through a night city. AI short film · surreal fashion editorial. Follow @artbyronic for the next chapter. #artbyronic #surrealart #fashioneditorial #surrealfashion",
      "score": 100,
      "why": [
       "All checks passed"
@@ -557,7 +557,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Me, pretending this is a normal Tuesday. 💫\n\nNeon jellyfish dress drifting through a night city.\n\nFollow so you don't miss part 2.\n\n#artbyronic #surrealart",
+     "text": "Tell me this isn't your new wallpaper. 😌\n\nNeon jellyfish dress drifting through a night city.\n\nFollow for more surreal editorials.\n\n#artbyronic #aiart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -578,7 +578,7 @@
    },
    "r": {
     "instagram": {
-     "text": "This is not a photograph. 👁️\n\nMarble statue comes alive and walks the runway.\n\nAI short film · surreal digital art.\n\nWould you step into this world? Yes or no?\n\n#artbyronic #aiart #aiartcommunity #surrealfashion #aicinema",
+     "text": "Rules? Never heard of them. ✨\n\nMarble statue comes alive and walks the runway.\n\nAI short film · surreal digital art.\n\nWould you step into this world? Yes or no?\n\n#artbyronic #aivideo #fantasyart #surrealfashion #editorialart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -586,7 +586,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Zero cameras. Full editorial. Marble statue comes alive and walks the runway. AI short film · surreal digital art. Would you step into this world? Yes or no? #artbyronic #aiart #fashioneditorial #dreamcore",
+     "text": "Zero cameras. Full editorial. Marble statue comes alive and walks the runway. AI short film · surreal digital art. Which detail caught you first? #artbyronic #surrealart #aiartcommunity #seedance",
      "score": 100,
      "why": [
       "All checks passed"
@@ -594,12 +594,12 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Couture for a world that doesn't exist yet. 👁️\n\nMarble statue comes alive and walks the runway.\n\nWhich one is your favourite, and why?\n\n#artbyronic #aivideo",
+     "text": "This is not a photograph. ⚡\n\nMarble statue comes alive and walks the runway.\n\nWhat would you name this piece?\n\n#artbyronic #aiart",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 2
+     "tries": 3
     }
    }
   },
@@ -615,15 +615,15 @@
    },
    "r": {
     "instagram": {
-     "text": "You were not meant to find this. 🖤\n\nDesert queen with a gown of sand pouring from her shoulders.\n\nAI art · surreal fashion editorial.\n\nSave it for later, it hits different at night.\n\n#artbyronic #digitalart #surrealfashion #fashioneditorial #darkfantasy",
+     "text": "The quiet before she disappears. 🕯️\n\nDesert queen with a gown of sand pouring from her shoulders.\n\nAI art · surreal fashion editorial.\n\nSave it for later, it hits different at night.\n\n#artbyronic #surrealart #fashioneditorial #surrealfashion #darkfantasy",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 1
+     "tries": 2
     },
     "tiktok": {
-     "text": "Some doors only open at midnight. Desert queen with a gown of sand pouring from her shoulders. AI art · surreal fashion editorial. Save this for your moodboard. #artbyronic #aiart #fashioneditorial #surrealfashion",
+     "text": "It was never a dream. Desert queen with a gown of sand pouring from her shoulders. AI art · surreal fashion editorial. Save this for your moodboard. #artbyronic #surrealart #fashioneditorial #surrealfashion",
      "score": 100,
      "why": [
       "All checks passed"
@@ -631,7 +631,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "You were not meant to find this. 🕯️\n\nDesert queen with a gown of sand pouring from her shoulders.\n\nSave this for your moodboard.\n\n#artbyronic #digitalart",
+     "text": "Nobody remembers who built this place. 🕯️\n\nDesert queen with a gown of sand pouring from her shoulders.\n\nSave this for your moodboard.\n\n#artbyronic #aiart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -652,7 +652,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Soft as memory, sharp as glass. 🌊\n\nButterfly wings stitched into a corset, macro shot.\n\nAI art · surreal digital art.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #digitalart #surrealfashion #seedance #goldaesthetic",
+     "text": "Soft as memory, sharp as glass. 🌙\n\nButterfly wings stitched into a corset, macro shot.\n\nAI art · surreal digital art.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #aiart #dreamcore #fashioneditorial #aifilm",
      "score": 100,
      "why": [
       "All checks passed"
@@ -660,7 +660,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "The sea held its breath for her. Butterfly wings stitched into a corset, macro shot. AI art · surreal digital art. Send this to someone who dreams in gold. #artbyronic #surrealart #goldaesthetic #dreamcore",
+     "text": "A slow bloom under a borrowed moon. Butterfly wings stitched into a corset, macro shot. AI art · surreal digital art. Share with the friend who would wear this. #artbyronic #aiart #surrealism #aifashion",
      "score": 100,
      "why": [
       "All checks passed"
@@ -668,12 +668,12 @@
      "tries": 1
     },
     "facebook": {
-     "text": "Silence, poured in gold. 🌙\n\nButterfly wings stitched into a corset, macro shot.\n\nSend this to someone who dreams in gold.\n\n#artbyronic #surrealart",
+     "text": "The sea held its breath for her. ✨\n\nButterfly wings stitched into a corset, macro shot.\n\nShare with the friend who would wear this.\n\n#artbyronic #aiart",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 3
+     "tries": 1
     }
    }
   },
@@ -689,12 +689,12 @@
    },
    "r": {
     "instagram": {
-     "text": "The quiet before she disappears. 🖤\n\nSeedance short: greenhouse burns, twin smiles.\n\nThe Greenhouse · Part 4\nAI short film · surreal digital art.\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #surrealart #thegreenhouse #aifilm #darkfantasy",
+     "text": "Look closer. Something is wrong here. 🖤\n\nSeedance short: greenhouse burns, twin smiles.\n\nThe Greenhouse · Part 4\nAI short film · surreal digital art.\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #aiart #thegreenhouse #darkfantasy #aifilm",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 1
+     "tries": 2
     },
     "tiktok": {
      "text": "The quiet before she disappears. The Greenhouse · Part 4. Seedance short: greenhouse burns, twin smiles. AI short film · surreal digital art. Follow so you don't miss part 5. #artbyronic #surrealart #thegreenhouse #darkfantasy",
@@ -705,12 +705,12 @@
      "tries": 1
     },
     "facebook": {
-     "text": "It was never a dream. ✨\n\nSeedance short: greenhouse burns, twin smiles. (The Greenhouse · Part 4)\n\nFollow for more surreal editorials.\n\n#artbyronic #aivideo",
+     "text": "Nobody remembers who built this place. 🌙\n\nSeedance short: greenhouse burns, twin smiles. (The Greenhouse · Part 4)\n\nFollow @artbyronic for the next chapter.\n\n#artbyronic #aivideo",
      "score": 100,
      "why": [
       "All checks passed"
      ],
-     "tries": 3
+     "tries": 1
     }
    }
   },
@@ -726,7 +726,7 @@
    },
    "r": {
     "instagram": {
-     "text": "Gravity called. She let it go to voicemail. ✨\n\nGlass high heels filled with ocean waves.\n\nAI art · surreal digital art.\n\nPrints & custom pieces: link in bio.\n\n#artbyronic #digitalart #conceptart #surrealism #editorialart",
+     "text": "POV: your outfit has its own weather. 🫧\n\nGlass high heels filled with ocean waves.\n\nAI art · surreal digital art.\n\nPrints & custom pieces: link in bio.\n\n#artbyronic #surrealart #aifilm #editorialart #dreamcore",
      "score": 100,
      "why": [
       "All checks passed"
@@ -734,7 +734,7 @@
      "tries": 1
     },
     "tiktok": {
-     "text": "Tell me this isn't your new wallpaper. Glass high heels filled with ocean waves. AI art · surreal digital art. Prints & custom pieces: link in bio. #artbyronic #aiart #darkfantasy #conceptart",
+     "text": "Gravity called. She let it go to voicemail. Glass high heels filled with ocean waves. AI art · surreal digital art. Want this on your wall? Link in bio. #artbyronic #surrealart #surrealfashion #fantasyart",
      "score": 100,
      "why": [
       "All checks passed"
@@ -742,7 +742,7 @@
      "tries": 1
     },
     "facebook": {
-     "text": "When the dress code says \"surreal\". 🫧\n\nGlass high heels filled with ocean waves.\n\nWant this on your wall? Link in bio.\n\n#artbyronic #digitalart",
+     "text": "When the dress code says \"surreal\". ✨\n\nGlass high heels filled with ocean waves.\n\nWant this on your wall? Link in bio.\n\n#artbyronic #surrealart",
      "score": 100,
      "why": [
       "All checks passed"

@@ -60,7 +60,7 @@ function generate(i,p,seed){const r=rng(seed),lang=i.lang||'en',H=lang==='nl'?NL
   L=[`${hook} ${emo}`,'',b+(ser?` (${ser})`:''),'',q, tg.length?'\n'+tg.join(' '):'']}
  let text=L.filter(x=>x!==null).join('\n').replace(/\n{3,}/g,'\n\n').replace(/[ \t]+/g,' ').trim();
  return {text,hook,tags:tg}}
-function score(text,p,hist){const R0=R[p],why=[];let s=100;const len=[...text].length;
+function score(text,p,hist,A){const R0=R[p],why=[];let s=100;const len=[...text].length;
  const first=p==='tiktok'?(sentences(text.split('\n')[0])[0]||''):text.split('\n')[0];const tags=(text.match(/#[\p{L}\p{N}_]+/gu)||[]).map(t=>t.slice(1).toLowerCase());
  const fl=[...first].length;
  if(fl>R0.preview){s-=15;why.push(`Hook ${fl} chars > ${R0.preview} preview`)}else if(fl<12){s-=10;why.push('Hook too short')}
@@ -78,9 +78,10 @@ function score(text,p,hist){const R0=R[p],why=[];let s=100;const len=[...text].l
  const avg=words.length/Math.max(1,sl.length);if(avg>24){s-=10;why.push('Long sentences')}
  if(p==='instagram'&&len>200&&!text.includes('\n')){s-=5;why.push('No line breaks')}
  if(hist&&hist.some(h=>h.split('\n')[0]===first)){s-=20;why.push('Hook repeats a recent caption')}
+ if(A&&G.INS){const b=G.INS.bias(text,p,A);s=Math.min(100,s+b.d);why.push(...b.why)}
  if(!why.length)why.push('All checks passed');return {score:Math.max(0,s),why,len,tags:tags.length}}
-function best(i,p,hist,th=80,tries=25){let b=null;const base=(Date.now()+Math.random()*1e9)|0;
- for(let k=0;k<tries;k++){const g=generate(i,p,base+k*7919);const sc=score(g.text,p,hist);g.sc=sc;g.tries=k+1;
+function best(i,p,hist,th=80,tries=25,A){let b=null;const base=(Date.now()+Math.random()*1e9)|0;
+ for(let k=0;k<tries;k++){const g=generate(i,p,base+k*7919);const sc=score(g.text,p,hist,A);g.sc=sc;g.tries=k+1;
   if(!b||sc.score>b.sc.score)b=g;if(sc.score>=th)break}return b}
 function alt(i){const d=sentences(i.description)[0]||'';return `${i.type==='reel'?'Video still':'AI-generated artwork'} by ArtByRonic: ${d}`.slice(0,250)}
-G.ABR={R,BANNED,generate,score,best,alt}})(typeof window!=='undefined'?window:globalThis);
+G.ABR={R,HOOKS,CTA,BANNED,generate,score,best,alt}})(typeof window!=='undefined'?window:globalThis);
