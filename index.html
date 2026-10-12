@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ArtByRonic Captions</title>
+<style>:root{--bg:#0f0d12;--card:#1a1720;--gold:#d6a84f;--line:#2e2936;--rust:#c2582f;--txt:#eee8f2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,sans-serif;padding:14px;max-width:760px;margin:auto}
+h1{color:var(--gold);font-size:22px;margin:6px 0 2px}.sub{opacity:.6;font-size:13px;margin-bottom:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+label{display:block;font-size:12px;color:var(--gold);margin:10px 0 4px;text-transform:uppercase;letter-spacing:.05em}textarea,input,select{width:100%;background:#110f15;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:15px}textarea{min-height:90px}
+.row{display:flex;gap:8px}.row>*{flex:1}button{background:var(--gold);color:#16131b;border:0;border-radius:10px;padding:11px 14px;font-weight:700;font-size:15px;cursor:pointer}button.alt{background:#2a2531;color:var(--txt)}
+#prev{max-width:100%;max-height:220px;border-radius:10px;margin-top:8px;display:none}.plat h3{margin:0;color:var(--gold);font-size:16px;display:flex;justify-content:space-between}pre{white-space:pre-wrap;font-family:inherit;background:#0b0a0e;border-radius:10px;padding:10px;font-size:14px;margin:8px 0}
+.meta{font-size:12px;opacity:.75}.ok{color:#7fd18b}.bad{color:var(--rust)}.badge{padding:2px 8px;border-radius:20px;background:#2a2531;font-size:13px}details{font-size:13px}.hist{font-size:13px;border-top:1px solid var(--line);padding:8px 0;cursor:pointer}</style></head><body>
+<h1>✦ ArtByRonic Captions</h1><div class="sub">Captions for Instagram, TikTok and Facebook, built on 2026 best practices, with a quality score for each one.</div>
+<div class="card"><label>Description of the piece</label><textarea id="desc" placeholder="A woman in a liquid-gold gown walks on water under a giant moon…"></textarea>
+<label>Image (optional)</label><input type="file" id="img" accept="image/*"><img id="prev">
+<div class="row"><div><label>Mood</label><select id="mood"><option>mysterious</option><option>poetic</option><option>bold</option><option>playful</option></select></div>
+<div><label>Type</label><select id="type"><option>image</option><option>reel</option><option>carousel</option></select></div></div>
+<div class="row"><div><label>Series</label><input id="series" placeholder="The Greenhouse"></div><div><label>Episode</label><input id="ep" type="number" min="1"></div></div>
+<div class="row"><div><label>CTA</label><select id="cta"><option value="comment">Comment / question</option><option value="follow">Follow</option><option value="save">Save</option><option value="share">Share</option><option value="shop">Shop / link in bio</option></select></div>
+<div><label>Language</label><select id="lang"><option value="en">EN</option><option value="nl">NL</option></select></div></div>
+<label>Pass threshold</label><input id="th" type="number" value="85" min="50" max="100">
+<div class="row" style="margin-top:12px"><button id="go">Generate</button><button class="alt" id="shuf">🔀 Shuffle</button></div>
+<details style="margin-top:10px"><summary>🤖 Smarter captions with your own AI key (optional)</summary>
+<label>API base URL (OpenAI-compatible)</label><input id="base" placeholder="https://api.x.ai/v1"><label>Model</label><input id="model" placeholder="grok-4 / gpt-4o"><label>API key (stored on this device only)</label><input id="key" type="password">
+<div class="row" style="margin-top:8px"><button class="alt" id="savekey">Save</button><button class="alt" id="ai">Generate with AI</button></div><div class="meta">The key is stored only in your browser's localStorage and is never uploaded anywhere. AI captions go through the same score.</div></details></div>
+<div id="out"></div><div class="card"><b style="color:var(--gold)">Alt text</b><pre id="alt">–</pre><button class="alt" onclick="cp(document.getElementById('alt').textContent)">Copy</button></div>
+<div class="card"><b style="color:var(--gold)">History</b> <button class="alt" style="padding:4px 10px;font-size:12px;float:right" id="clr">Clear</button><div id="hist"></div></div>
+<script src="gen.js"></script><script>
+const $=id=>document.getElementById(id),P={instagram:'Instagram',tiktok:'TikTok',facebook:'Facebook'};let imgData=null;
+const H=()=>JSON.parse(localStorage.abrHist||'[]');
+$('img').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{imgData=r.result;$('prev').src=imgData;$('prev').style.display='block'};r.readAsDataURL(f)};
+function inp(){return{description:$('desc').value||'A surreal fashion editorial piece.',mood:$('mood').value,type:$('type').value,series:$('series').value.trim(),episode:$('ep').value,cta:$('cta').value,lang:$('lang').value}}
+function cp(t){navigator.clipboard.writeText(t)}
+function render(res,i){const prev=H().flatMap(h=>Object.values(h.c));$('out').innerHTML=Object.keys(P).map(p=>{const g=res[p],sc=ABR.score(g.text,p,prev),r=ABR.R[p],pass=sc.score>=+$('th').value;
+ return `<div class="card plat"><h3>${P[p]} <span class="badge ${pass?'ok':'bad'}">${sc.score}/100 ${pass?'✓':'✗'}</span></h3><pre id="c_${p}"></pre>
+ <div class="meta">${sc.len} / ${r.limit.toLocaleString()} characters · sweet spot ${r.sweet[0]}–${r.sweet[1]} · ${sc.tags} hashtags (max ${r.maxTags})${g.tries?' · '+g.tries+' tries':''}</div>
+ <div class="meta ${pass?'ok':'bad'}">${sc.why.join(' · ')}</div><div class="row" style="margin-top:8px"><button onclick="cp(document.getElementById('c_${p}').textContent)">Copy</button><button class="alt" onclick="one('${p}')">🔀</button></div></div>`}).join('');
+ for(const p in P)$('c_'+p).textContent=res[p].text;$('alt').textContent=ABR.alt(i);window.cur=res}
+function save(res,i){const h=H();h.unshift({t:Date.now(),d:i.description.slice(0,60),c:Object.fromEntries(Object.keys(P).map(p=>[p,res[p].text]))});localStorage.abrHist=JSON.stringify(h.slice(0,50));showH()}
+function gen(){const i=inp(),prev=H().flatMap(h=>Object.values(h.c)),res={};for(const p in P)res[p]=ABR.best(i,p,prev,+$('th').value);render(res,i);save(res,i)}
+function one(p){const i=inp();window.cur[p]=ABR.best(i,p,H().flatMap(h=>Object.values(h.c)),+$('th').value);render(window.cur,i)}
+function showH(){$('hist').innerHTML=H().map((h,k)=>`<div class="hist" onclick="load(${k})">${new Date(h.t).toLocaleString()} – ${h.d.replace(/</g,'&lt;')}</div>`).join('')||'<div class="meta">No history yet</div>'}
+function load(k){const h=H()[k],res={};for(const p in P)res[p]={text:h.c[p]};render(res,inp())}
+$('go').onclick=gen;$('shuf').onclick=gen;$('clr').onclick=()=>{localStorage.abrHist='[]';showH()};
+$('base').value=localStorage.abrBase||'';$('model').value=localStorage.abrModel||'';$('key').value=localStorage.abrKey||'';
+$('savekey').onclick=()=>{localStorage.abrBase=$('base').value;localStorage.abrModel=$('model').value;localStorage.abrKey=$('key').value;alert('Saved on this device')};
+$('ai').onclick=async()=>{const i=inp(),k=$('key').value;if(!k)return alert('Enter your API key first');$('ai').textContent='Working…';
+ const rules=`Write captions for the brand ArtByRonic (surreal fashion-editorial AI art, Seedance reels). Language: ${i.lang}. Mood: ${i.mood}. Type: ${i.type}. Series: ${i.series} ${i.episode}. CTA: ${i.cta}.
+Instagram: hook under 125 chars on the first line, line breaks, keyword phrase, CTA, exactly 5 hashtags at the end incl #artbyronic, max 600 chars.
+TikTok: one paragraph 80-300 chars, hook first, searchable keywords, 4 hashtags incl #artbyronic, no #fyp.
+Facebook: conversational, hook first, end with a question, 0-2 hashtags incl #artbyronic, max 320 chars.
+Reply ONLY with JSON {"instagram":"","tiktok":"","facebook":"","alt":""}. Description: ${i.description}`;
+ const content=imgData?[{type:'text',text:rules},{type:'image_url',image_url:{url:imgData}}]:rules;
+ try{const r=await fetch(($('base').value||'https://api.openai.com/v1').replace(/\/$/,'')+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+k},body:JSON.stringify({model:$('model').value||'gpt-4o-mini',messages:[{role:'user',content}]})});
+ const j=await r.json(),t=j.choices[0].message.content,o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1)),res={};for(const p in P)res[p]={text:o[p]};render(res,i);if(o.alt)$('alt').textContent=o.alt;save(res,i)}catch(e){alert('AI error: '+e.message)}$('ai').textContent='Generate with AI'};
+showH();</script></body></html>
